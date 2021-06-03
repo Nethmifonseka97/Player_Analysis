@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Analysis</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+    
+    
+
+</head>
+
+<body>
+
+
+ <div class="login">
+     <br> <br> <br> <br> <br> <br>
+     <center><h1>Object detection </h1><br>
+
+     <!-- Form to enter new data to analyze  -->
+    <form action='/game_analysis' method="POST" enctype="multipart/form-data">
+        
+        <center><label for="game_analysis">Enter team Colors </label><br><br>
+        <input type="text" name="team1" placeholder="Team 1" required="required"/><br><br>
+        <input type="text" name="team2" placeholder="Team 2" required="required"/><br><br>
+         
+       
+        <input type="url" id="url" name="url" required="required"  placeholder="Video Url"/><br>
+        <br>
+        
+        <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+       
+        
+    </form>
+ 
+
+   <br>
+   <br>
+  
+   
+ </div>
+
+</body>
+</html>
